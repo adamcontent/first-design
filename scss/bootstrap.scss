@@ -1,0 +1,12 @@
+// import custom styles from styles.scss
+@import "styles";
+
+//Redefining Bootstrap's variables with my custom variables
+$primary: $custom-primary;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Anything below this line will override bootstrap styles, since @import is above.
+.navbar {
+  background-color: $custom-primary; // Set the background color of the navbar to your custom primary color
+}
